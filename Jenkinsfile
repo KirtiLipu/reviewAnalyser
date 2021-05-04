@@ -1,14 +1,14 @@
-pipeline {   
-    agent any   
-       stages {         
+pipeline {
+    agent any
+       stages {
        stage("Compile") {
-        steps {               
-            sh "mvn compile"             
+        steps {
+            sh "mvn compile"
                }
            }
        stage("Unit test") {
            steps {
-               sh "mvn test"             
+               sh "mvn test"
                }
            }
        }
