@@ -16,7 +16,7 @@ pipeline {
     always {
       step([$class: 'JacocoPublisher',
             execPattern: 'target/*.exec',
-            classPattern: 'target/classes',
+            classPattern: 'target/classes',
             sourcePattern: 'src/main/java',
             exclusionPattern: 'src/test*'
             ])
